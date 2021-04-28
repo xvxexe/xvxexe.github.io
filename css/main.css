@@ -1,0 +1,431 @@
+@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  color: #000;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-mode .first-container header .container {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark-mode .first-container header .container .circle {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.dark-mode .second-container .about #more-btn {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark-mode .second-container .img-container .wave svg path {
+  fill: #000;
+}
+
+/*
+  background: repeating-linear-gradient(
+    130deg,
+    #fff 0%,
+    #fff 5%,
+    #000 5%,
+    #000 10%
+  );
+*/
+.first-container {
+  height: 1000px;
+}
+
+.first-container .bg-circle {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.first-container .right-circle {
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 400px;
+  background: repeating-linear-gradient(130deg, transparent 0%, transparent 4%, #b6b6b6 4%, #b6b6b6 5%);
+  border-radius: 50% 0% 30% 50%;
+}
+
+.first-container header {
+  position: relative;
+  text-align: center;
+  width: 260px;
+  margin: auto;
+}
+
+.first-container header .container {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 20px 20px;
+  border-radius: 40px 0 40px 0;
+  margin: -15px 0;
+}
+
+.first-container header .container .circle {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  margin: 20px auto;
+  border-radius: 50%;
+  border-collapse: collapse;
+  -webkit-box-shadow: 0 0 0 1px #000, 0 0 0 3px #fff, 0 0 0 5px #000, 0 0 0 7px #fff, 0 0 0 9px #000, 0 0 0 11px #fff, 0 0 0 13px #000, 0 0 0 15px #fff, 0 0 0 17px #000;
+          box-shadow: 0 0 0 1px #000, 0 0 0 3px #fff, 0 0 0 5px #000, 0 0 0 7px #fff, 0 0 0 9px #000, 0 0 0 11px #fff, 0 0 0 13px #000, 0 0 0 15px #fff, 0 0 0 17px #000;
+  -webkit-animation: circle 3s infinite ease-in-out;
+          animation: circle 3s infinite ease-in-out;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    background-color: #000;
+    -webkit-box-shadow: 0 0 0 1px #000, 0 0 0 3px #fff, 0 0 0 5px #000, 0 0 0 7px #fff, 0 0 0 9px #000, 0 0 0 11px #fff, 0 0 0 13px #000, 0 0 0 15px #fff, 0 0 0 17px #000;
+            box-shadow: 0 0 0 1px #000, 0 0 0 3px #fff, 0 0 0 5px #000, 0 0 0 7px #fff, 0 0 0 9px #000, 0 0 0 11px #fff, 0 0 0 13px #000, 0 0 0 15px #fff, 0 0 0 17px #000;
+  }
+  50% {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 3px #000, 0 0 0 5px #fff, 0 0 0 7px #000, 0 0 0 9px #fff, 0 0 0 11px #000, 0 0 0 13px #fff, 0 0 0 15px #000, 0 0 0 17px #fff;
+            box-shadow: 0 0 0 1px #fff, 0 0 0 3px #000, 0 0 0 5px #fff, 0 0 0 7px #000, 0 0 0 9px #fff, 0 0 0 11px #000, 0 0 0 13px #fff, 0 0 0 15px #000, 0 0 0 17px #fff;
+  }
+  100% {
+    background-color: #000;
+    -webkit-box-shadow: 0 0 0 1px #000, 0 0 0 3px #fff, 0 0 0 5px #000, 0 0 0 7px #fff, 0 0 0 9px #000, 0 0 0 11px #fff, 0 0 0 13px #000, 0 0 0 15px #fff, 0 0 0 17px #000;
+            box-shadow: 0 0 0 1px #000, 0 0 0 3px #fff, 0 0 0 5px #000, 0 0 0 7px #fff, 0 0 0 9px #000, 0 0 0 11px #fff, 0 0 0 13px #000, 0 0 0 15px #fff, 0 0 0 17px #000;
+  }
+}
+
+@keyframes circle {
+  0% {
+    background-color: #000;
+    -webkit-box-shadow: 0 0 0 1px #000, 0 0 0 3px #fff, 0 0 0 5px #000, 0 0 0 7px #fff, 0 0 0 9px #000, 0 0 0 11px #fff, 0 0 0 13px #000, 0 0 0 15px #fff, 0 0 0 17px #000;
+            box-shadow: 0 0 0 1px #000, 0 0 0 3px #fff, 0 0 0 5px #000, 0 0 0 7px #fff, 0 0 0 9px #000, 0 0 0 11px #fff, 0 0 0 13px #000, 0 0 0 15px #fff, 0 0 0 17px #000;
+  }
+  50% {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 3px #000, 0 0 0 5px #fff, 0 0 0 7px #000, 0 0 0 9px #fff, 0 0 0 11px #000, 0 0 0 13px #fff, 0 0 0 15px #000, 0 0 0 17px #fff;
+            box-shadow: 0 0 0 1px #fff, 0 0 0 3px #000, 0 0 0 5px #fff, 0 0 0 7px #000, 0 0 0 9px #fff, 0 0 0 11px #000, 0 0 0 13px #fff, 0 0 0 15px #000, 0 0 0 17px #fff;
+  }
+  100% {
+    background-color: #000;
+    -webkit-box-shadow: 0 0 0 1px #000, 0 0 0 3px #fff, 0 0 0 5px #000, 0 0 0 7px #fff, 0 0 0 9px #000, 0 0 0 11px #fff, 0 0 0 13px #000, 0 0 0 15px #fff, 0 0 0 17px #000;
+            box-shadow: 0 0 0 1px #000, 0 0 0 3px #fff, 0 0 0 5px #000, 0 0 0 7px #fff, 0 0 0 9px #000, 0 0 0 11px #fff, 0 0 0 13px #000, 0 0 0 15px #fff, 0 0 0 17px #000;
+  }
+}
+
+.first-container header .container p {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.first-container .title {
+  position: relative;
+  text-align: center;
+  width: 260px;
+  margin: 100px auto;
+}
+
+.first-container .title h1 {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.first-container .title .lil-circle {
+  top: 30px;
+  width: 100px;
+  height: 100px;
+  background: repeating-linear-gradient(130deg, transparent 0%, transparent 2%, #646464 2%, #646464 4%);
+}
+
+.first-container .name {
+  position: relative;
+  text-align: center;
+  width: 260px;
+  margin: auto;
+}
+
+.first-container .name h2 {
+  font-weight: 900;
+  margin: 70px 10px auto;
+}
+
+.first-container .name .left-circle {
+  top: 100px;
+  left: -500px;
+  width: 400px;
+  height: 400px;
+  background: repeating-linear-gradient(130deg, transparent 0%, transparent 4%, #b6b6b6 4%, #b6b6b6 5%);
+}
+
+.second-container {
+  position: static;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70vh;
+}
+
+.second-container .about {
+  width: 50%;
+  text-align: center;
+}
+
+.second-container .about .introduction {
+  margin: 0 auto 60px;
+}
+
+.second-container .about .introduction h2 {
+  text-transform: capitalize;
+}
+
+.second-container .about .introduction h3 {
+  margin: 10px 0 auto;
+  font-weight: 100;
+}
+
+.second-container .about .skills h2 {
+  margin: 0 0 20px;
+}
+
+.second-container .about .skills .skills-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  border: 2px solid #b4adae;
+  border-radius: 20px;
+}
+
+.second-container .about .skills .skills-container h4 {
+  padding: 20px;
+}
+
+.second-container .about #more-btn {
+  width: 100px;
+  height: 50px;
+  background-color: #000;
+  margin: 100px 0 auto;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.second-container .img-container {
+  position: relative;
+  width: 50%;
+}
+
+.second-container .img-container .wave {
+  position: absolute;
+  margin-left: -100px;
+  width: 100%;
+  height: 110%;
+}
+
+.second-container .img-container .wave svg {
+  width: 100%;
+  height: 100%;
+}
+
+.second-container .img-container .wave svg path {
+  fill: #fff;
+}
+
+.second-container .img-container img {
+  width: 100%;
+  height: 70vh;
+}
+
+.projects-container {
+  position: relative;
+  margin: 100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1000px;
+}
+
+.projects-container .project-img {
+  width: auto;
+  height: 600px;
+}
+
+.projects-container .first {
+  width: 50%;
+  text-align: center;
+}
+
+.projects-container .first h2 {
+  text-transform: capitalize;
+}
+
+.projects-container .second {
+  width: 50%;
+}
+
+.projects-container .second .first-project-container {
+  width: 50%;
+  padding: 20px;
+  position: absolute;
+  left: 0px;
+  top: 100px;
+  margin: auto;
+  text-align: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.projects-container .second .first-project-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.projects-container .second .first-project-container .description-container {
+  background-color: #616161;
+}
+
+.projects-container .second .second-project-container {
+  width: 50%;
+  padding: 20px;
+  position: absolute;
+  right: 0px;
+  top: 100px;
+  margin: auto;
+  text-align: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.projects-container .second .second-project-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.projects-container .second .second-project-container .description-container {
+  background-color: #616161;
+}
+
+.projects-container .second .third-project-container {
+  width: 50%;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  top: 300px;
+  margin: auto;
+  text-align: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.projects-container .second .third-project-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.projects-container .second .third-project-container .description-container {
+  background-color: #616161;
+}
+
+.projects-container .first-project-container:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.projects-container .second-project-container:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.projects-container .third-project-container:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05) translate(-50%);
+          transform: scale(1.05) translate(-50%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media (min-width: 900px) {
+  .first-container .name .left-circle {
+    top: 100px;
+    left: -600px;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .second-container {
+    display: block;
+    height: auto;
+  }
+  .second-container .about {
+    width: 100%;
+    text-align: center;
+  }
+  .second-container .img-container {
+    width: 100%;
+    height: 50vh;
+    margin: 100px 0 0;
+  }
+  .second-container .img-container img {
+    max-width: 100%;
+    height: 50vh;
+  }
+}
+
+@media (min-width: 1300px) {
+  .first-container .name .left-circle {
+    top: 100px;
+    left: -800px;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 580px) {
+  .first-container .right-circle {
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 200px;
+    border-radius: 50% 0% 30% 50%;
+  }
+  .first-container .name .left-circle {
+    top: 100px;
+    left: -170px;
+    width: 200px;
+    height: 200px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

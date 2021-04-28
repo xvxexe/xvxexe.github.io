@@ -1,0 +1,248 @@
+@media (min-width: 1010px) {
+  .first {
+    padding: 10% 0;
+  }
+  .logo {
+    position: absolute;
+    top: 4%;
+    left: 5%;
+  }
+  nav {
+    position: absolute;
+    top: 3%;
+    width: 95%;
+    background: none;
+    .burger {
+      display: none;
+    }
+    .links {
+      display: flex;
+      justify-content: flex-end;
+      position: inherit;
+      margin-top: 0;
+      width: 100%;
+      background: none;
+      font-size: 27px;
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        li {
+          border: none;
+          height: auto;
+          padding: 0 20px;
+          #icon {
+            visibility: visible;
+          }
+          a {
+            text-transform: capitalize;
+            margin: auto;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+          }
+          a:hover {
+            color: #43960f;
+          }
+        }
+      }
+    }
+  }
+  .welcome {
+    display: flex;
+    width: 95%;
+    #text {
+      width: 50%;
+      padding: 0 15px;
+      h1 {
+        font-size: 41px;
+      }
+      .vegetables {
+        font-size: 66px;
+        padding: 10px 0 45px;
+      }
+      .search {
+        width: 100%;
+        input {
+          height: 60px;
+          padding: 15px 30px;
+        }
+        ::-webkit-input-placeholder {
+          padding: 0;
+          font-size: 20px;
+        }
+        button {
+          height: 60px;
+          margin: 0 0 0 -5px;
+          background: black;
+          color: white;
+          font-size: 18px;
+          padding: 15px 0;
+          border: none;
+          box-shadow: 5px 1px 10px gray;
+          transition: 0.4s;
+        }
+        button:hover {
+          background-color: #428713;
+        }
+      }
+      .contact {
+        text-align: left;
+        button {
+          transition: 0.4s;
+          cursor: pointer;
+        }
+        button:hover {
+          background-color: #428713;
+        }
+      }
+    }
+    .broccoli {
+      display: block;
+      width: auto;
+      height: auto;
+      padding: 0 15px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .contact {
+    button {
+      font-size: 13px;
+    }
+  }
+  .about {
+    .container {
+      .container2 {
+        display: flex;
+        justify-self: unset;
+        align-items: unset;
+        img {
+          max-width: 70%;
+          height: 30%;
+        }
+        .container3 {
+          button {
+            transition: 0.4s;
+            cursor: pointer;
+          }
+          button:hover {
+            background-color: #428713;
+          }
+        }
+      }
+    }
+  }
+
+  .veg-container {
+    padding-bottom: 500px;
+    width: 90%;
+    .wrap {
+      display: flex;
+      .text-container {
+        width: 50%;
+        p {
+          font-size: 17px;
+          line-height: 27px;
+        }
+      }
+      .imgs-container {
+        position: relative;
+        width: 50%;
+        height: auto;
+        img {
+          max-width: 100%;
+          height: auto;
+          padding: 10px 0;
+        }
+
+        .under {
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          z-index: -1;
+        }
+
+        .over {
+          position: absolute;
+          left: -340px;
+          top: 290px;
+          z-index: -1;
+        }
+      }
+    }
+  }
+  #testimonial {
+    padding: 60px 20% 0 0;
+    font-size: 50px;
+  }
+  .testimonial {
+    .tc1 {
+      display: flex;
+      padding: 60px 40px;
+      .text {
+        width: 60%;
+        padding: 58px 0 58px 60px;
+        h3 {
+          font-size: 30px;
+          margin: 20px 0 0px;
+        }
+        p {
+          font-size: 19px;
+          line-height: 35px;
+        }
+      }
+      .tc2 {
+        width: 300px;
+        img {
+          max-width: 100%;
+          height: fit-content;
+        }
+      }
+    }
+  }
+
+  .testimonial::before {
+    width: 2000px;
+    height: 650px;
+    top: 10px;
+    left: -100px;
+    z-index: -1;
+    background: url("../imgs/v1.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+  .contact {
+    #one {
+      padding: 0 15px 90px;
+      #two {
+        margin: auto;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        form {
+          width: 50%;
+          padding: 60px 60px 60px;
+        }
+        .map {
+          width: 50%;
+          height: auto;
+        }
+      }
+    }
+  }
+  footer {
+    .logo-footer {
+      padding: 0 15px;
+      margin: 0px 10% 30px;
+    }
+    .content {
+      display: flex;
+      justify-content: space-around;
+      .social {
+        padding: 0;
+      }
+    }
+  }
+}
