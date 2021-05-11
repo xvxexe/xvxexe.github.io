@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Items from "./items";
 
-// https://api.edamam.com/search?q=${btnclick}&app_id=${APP_ID}&app_key=${APP_KEY}
-
 function App() {
   const APP_ID = "ba377b51";
   const APP_KEY = "f9238af8c5cf3b317ccdc526d65af8fd";
