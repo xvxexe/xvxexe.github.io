@@ -12,6 +12,9 @@ body {
   color: #000;
   transition: 1s;
 }
+
+/*Darkmode*/
+
 .dark-mode {
   background-color: #000;
   color: #fff;
@@ -45,17 +48,13 @@ body {
   }
 }
 
-/*
-  background: repeating-linear-gradient(
-    130deg,
-    #fff 0%,
-    #fff 5%,
-    #000 5%,
-    #000 10%
-  );
-*/
+/*First viewport styling*/
+
 .first-container {
   height: 1000px;
+
+  /*Global Circles styling*/
+
   .bg-circle {
     position: absolute;
     z-index: -1;
@@ -88,6 +87,9 @@ body {
       padding: 20px 20px;
       border-radius: 40px 0 40px 0;
       margin: -15px 0;
+
+      /*Header Circle Styling*/
+
       .circle {
         cursor: pointer;
         width: 20px;
@@ -174,6 +176,9 @@ body {
     }
   }
 }
+
+/*Skills Styling*/
+
 .second-container {
   position: static;
   display: flex;
@@ -239,6 +244,9 @@ body {
     }
   }
 }
+
+/*Projects Styling*/
+
 .projects-container {
   position: relative;
   margin: 100px auto;
@@ -310,6 +318,9 @@ body {
       transition: 1s;
     }
   }
+
+  /*Projects Containers Hover Styling*/
+
   .first-project-container:hover {
     cursor: pointer;
     transform: scale(1.05);
@@ -326,6 +337,11 @@ body {
     transition: 1s;
   }
 }
+
+/*Media Queries Styling*/
+
+//tablet styling
+
 @media (min-width: 900px) {
   .first-container {
     .name {
@@ -358,6 +374,8 @@ body {
   }
 }
 
+//Desktop Styling
+
 @media (min-width: 1300px) {
   .first-container {
     .name {
@@ -370,6 +388,9 @@ body {
     }
   }
 }
+
+//Mobile Styling
+
 @media (max-width: 580px) {
   .first-container {
     .right-circle {
