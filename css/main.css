@@ -44,6 +44,83 @@ body {
   fill: #000;
 }
 
+.contact {
+  width: 50%;
+  margin: 200px auto;
+  background-color: rgba(77, 77, 77, 0.664);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 100px;
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact form .input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact form .input-container input {
+  width: 385px;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.contact form .input-container #email {
+  margin-right: 5px;
+}
+
+.contact form .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.contact form .text-container textarea {
+  max-height: 500px;
+  max-width: 775px;
+  min-width: 775px;
+  min-height: 100px;
+  font-size: 20px;
+}
+
+.contact form .text-container button {
+  padding: 10px;
+  font-size: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: none;
+  margin-left: 20px;
+}
+
+.contact form .text-container button:hover {
+  background-color: green;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 /*First viewport styling*/
 .first-container {
   height: 100vh;
@@ -279,6 +356,8 @@ body {
 
 .projects-container {
   margin-top: 100px;
+  width: 80%;
+  margin: auto;
   /*Projects Containers Hover Styling*/
 }
 
