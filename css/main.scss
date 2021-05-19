@@ -18,9 +18,25 @@ body {
   content: "lightmode";
 }
 footer {
+  display: flex;
   width: 100%;
   height: 100px;
-  background-color: black;
+  background-color: #1c1e25;
+  border-radius: 6px 6px 0px 0px;
+  color: #fff;
+  img {
+    background-color: #fff;
+    width: 30px;
+  }
+  .info {
+    display: flex;
+    ul {
+      display: flex;
+      li {
+        display: flex;
+      }
+    }
+  }
 }
 
 /*Darkmode*/
@@ -70,7 +86,7 @@ footer {
   footer {
     width: 100%;
     height: 100px;
-    background-color: rgb(63, 63, 63);
+    color: #000;
   }
 }
 
@@ -79,11 +95,12 @@ footer {
 .contact {
   width: 70%;
   margin: 200px auto;
-  background-color: rgba(77, 77, 77, 0.664);
+  background-color: #1c1e25;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 100px;
+  border-radius: 20px;
   form {
     display: flex;
     flex-direction: column;
@@ -95,6 +112,8 @@ footer {
         padding: 10px;
         border: none;
         margin-bottom: 20px;
+        background-color: #323541;
+        color: #9b9b9b;
       }
       #email {
         margin-right: 5px;
@@ -109,6 +128,10 @@ footer {
         min-width: 775px;
         min-height: 100px;
         font-size: 20px;
+        background-color: #323541;
+        border-radius: 5px;
+        border: none;
+        color: #9b9b9b;
       }
       button {
         padding: 10px;
@@ -116,9 +139,10 @@ footer {
         transition: 0.3s;
         border: none;
         margin-left: 20px;
+        border-radius: 5px;
       }
       button:hover {
-        background-color: green;
+        background-color: orange;
         color: #fff;
         transition: 0.3s;
       }
@@ -129,7 +153,7 @@ footer {
 /*First viewport styling*/
 
 .first-container {
-  height: 100vh;
+  height: 1000px;
 
   /*Global Circles styling*/
 
@@ -268,9 +292,9 @@ footer {
 /*Skills Styling*/
 
 .second-container {
-  position: static;
+  position: inherit;
   display: flex;
-  height: 70vh;
+  height: 700px;
   margin-top: 200px;
   .about {
     width: 50%;
@@ -290,13 +314,13 @@ footer {
         color: #004600;
         font-size: 30px;
         text-decoration: underline green;
-        transition: 0.7s;
+        transition: 0.4s;
         border-radius: 100%;
       }
       span:hover {
         background-color: rgb(47, 255, 220);
-        transition: 0.2s;
-        animation: morphing 5s infinite;
+        transition: 0.5s;
+        animation: morphing 7s infinite;
         padding: 40px;
         text-decoration: none;
         text-decoration: underline #fff;
@@ -608,6 +632,7 @@ footer {
 
 @media (max-width: 580px) {
   .first-container {
+    height: 600px;
     .right-circle {
       top: 0;
       right: 0;
