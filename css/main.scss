@@ -26,15 +26,22 @@ footer {
   color: #fff;
   overflow: hidden;
   img {
-    background-color: #fff;
     width: 30px;
   }
   .info {
     display: flex;
     ul {
       display: flex;
+      flex-direction: column;
       li {
         display: flex;
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+        a:hover {
+          color: #fff9;
+        }
       }
     }
   }
@@ -618,6 +625,26 @@ footer {
         width: 100%;
         height: auto;
         margin-left: 0px;
+      }
+    }
+  }
+  footer {
+    display: block;
+    .info {
+      display: block;
+      ul {
+        display: flex;
+        flex-direction: column;
+        li {
+          display: flex;
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+          a:hover {
+            color: #fff9;
+          }
+        }
       }
     }
   }

@@ -34,7 +34,6 @@ footer {
 }
 
 footer img {
-  background-color: #fff;
   width: 30px;
 }
 
@@ -48,12 +47,25 @@ footer .info ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 footer .info ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+footer .info ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .info ul li a:hover {
+  color: #fff9;
 }
 
 /*Darkmode*/
@@ -714,6 +726,33 @@ footer .info ul li {
     width: 100%;
     height: auto;
     margin-left: 0px;
+  }
+  footer {
+    display: block;
+  }
+  footer .info {
+    display: block;
+  }
+  footer .info ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .info ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer .info ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  footer .info ul li a:hover {
+    color: #fff9;
   }
 }
 
