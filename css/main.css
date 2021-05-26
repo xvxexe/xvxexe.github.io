@@ -474,7 +474,7 @@ footer .info ul li a:hover {
 }
 
 .second-container .about #more-btn:hover {
-  background-color: green;
+  background-color: orange;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
