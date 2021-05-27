@@ -362,8 +362,32 @@ footer {
         margin: auto;
         border: 2px solid #b4adae;
         border-radius: 20px;
+        text-align: center;
+        .skills-text {
+          position: relative;
+          img {
+            transition: 0.7s;
+            opacity: 0;
+            position: absolute;
+            width: 30px;
+            height: auto;
+            left: 55px;
+            top: 15px;
+          }
+        }
+        .skills-text:hover {
+          h4 {
+            opacity: 0;
+            transition: 0.2s;
+          }
+          img {
+            transition: 0.5s;
+            opacity: 1;
+          }
+        }
         h4 {
           padding: 20px;
+          transition: 0.5s;
         }
       }
     }
