@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -13,6 +13,21 @@ body {
 
 .first {
   background-color: #efefef;
+}
+
+.goback {
+  position: fixed;
+  bottom: 4rem;
+  right: 2rem;
+  background-color: #00000060;
+  padding: 3rem;
+  border-radius: 50px;
+}
+
+.goback a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 .logo {
@@ -29,8 +44,8 @@ nav {
   margin: 15px auto;
   background: #43960f;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 nav .burger {
@@ -39,8 +54,8 @@ nav .burger {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 8px 20px 10px 30px;
   height: 1.5rem;
   cursor: pointer;
@@ -125,7 +140,7 @@ nav .links ul li a:hover {
   height: 3rem;
   border: none;
   -webkit-box-shadow: 5px -1px 10px gray;
-  box-shadow: 5px -1px 10px gray;
+          box-shadow: 5px -1px 10px gray;
 }
 
 .welcome .search ::-webkit-input-placeholder {
@@ -142,7 +157,7 @@ nav .links ul li a:hover {
   padding: 15px 0;
   border: none;
   -webkit-box-shadow: 5px 1px 10px gray;
-  box-shadow: 5px 1px 10px gray;
+          box-shadow: 5px 1px 10px gray;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   cursor: pointer;
@@ -161,11 +176,11 @@ nav .links ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .welcome .broccoli img {
@@ -200,7 +215,7 @@ nav .links ul li a:hover {
   width: 75%;
   margin: auto;
   -webkit-box-shadow: 1px 1px 10px gray;
-  box-shadow: 1px 1px 10px gray;
+          box-shadow: 1px 1px 10px gray;
 }
 
 .about .container .container2 {
@@ -208,8 +223,8 @@ nav .links ul li a:hover {
   background: #fff;
   margin: auto;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about .container .container2 .container3 {
@@ -276,8 +291,8 @@ nav .links ul li a:hover {
   display: flex;
   font-size: 21px;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .veg-container .fresh-vegetable h2 {
@@ -361,9 +376,9 @@ nav .links ul li a:hover {
   background: url("../imgs/v1.jpg") 0 0 no-repeat;
   background-size: cover;
   -webkit-transform: rotate(5deg);
-  transform: rotate(5deg);
+          transform: rotate(5deg);
   -webkit-filter: blur(5px);
-  filter: blur(5px);
+          filter: blur(5px);
 }
 
 .contact {
@@ -382,7 +397,7 @@ nav .links ul li a:hover {
 .contact #one #two {
   padding: 60px 15px;
   -webkit-box-shadow: 1px 1px 10px gray;
-  box-shadow: 1px 1px 10px gray;
+          box-shadow: 1px 1px 10px gray;
 }
 
 .contact #one #two form {
@@ -392,8 +407,8 @@ nav .links ul li a:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contact #one #two form input {
@@ -458,8 +473,8 @@ footer .social {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: #fff;
   padding: 30px 15px;
 }
@@ -489,8 +504,8 @@ footer .newsletter {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 0 15px;
   color: #fff;
 }
