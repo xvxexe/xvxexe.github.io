@@ -21,45 +21,71 @@ body {
   content: "lightmode";
 }
 
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.clouds {
+  position: relative;
+}
+
+.clouds img {
   width: 100%;
-  height: 100px;
-  background-color: #1c1e25;
-  border-radius: 6px 6px 0px 0px;
-  color: #fff;
-  overflow: hidden;
 }
 
-footer img {
-  width: 30px;
-}
-
-footer .info {
+.clouds .info {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  bottom: 200px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
 }
 
-footer .info a {
+.clouds .info img {
+  width: 80px;
+}
+
+.clouds .info a {
   text-decoration: none;
   color: #fff;
-  padding: 0 100px;
+  padding: 0 10px;
+  margin: 0 100px;
+  -webkit-animation: floatingImages 5s infinite ease-in-out;
+          animation: floatingImages 5s infinite ease-in-out;
 }
 
-footer .info a:hover {
+.clouds .info a:hover {
   color: #fff9;
+}
+
+@-webkit-keyframes floatingImages {
+  0% {
+    -webkit-transform: rotate(-100deg);
+            transform: rotate(-100deg);
+  }
+  50% {
+    -webkit-transform: rotate(100deg);
+            transform: rotate(100deg);
+  }
+  100% {
+    -webkit-transform: rotate(-100deg);
+            transform: rotate(-100deg);
+  }
+}
+
+@keyframes floatingImages {
+  0% {
+    -webkit-transform: rotate(-100deg);
+            transform: rotate(-100deg);
+  }
+  50% {
+    -webkit-transform: rotate(100deg);
+            transform: rotate(100deg);
+  }
+  100% {
+    -webkit-transform: rotate(-100deg);
+            transform: rotate(-100deg);
+  }
 }
 
 /*Darkmode*/
@@ -539,8 +565,6 @@ footer .info a:hover {
 
 .projects-container {
   margin-top: 100px;
-  width: 80%;
-  margin: auto;
   /*Projects Containers Hover Styling*/
 }
 
@@ -557,6 +581,8 @@ footer .info a:hover {
 }
 
 .projects-container .second {
+  width: 80%;
+  margin: auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -790,5 +816,9 @@ footer .info a:hover {
   .second-container {
     margin-top: 300px;
   }
+}
+
+.clouds img {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
