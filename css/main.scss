@@ -52,23 +52,40 @@ body {
       color: #fff;
       padding: 0 10px;
       margin: 0 100px;
-      animation: floatingImages 5s infinite ease-in-out;
     }
     a:hover {
       color: #fff9;
     }
+    .gmail {
+      animation: float-2 5s infinite ease-in-out;
+    }
+    .github {
+      animation: float-2 5s infinite ease-in-out;
+      animation-delay: 2s;
+    }
   }
 }
 
-@keyframes floatingImages {
+@keyframes float-1 {
   0% {
-    transform: rotate(-100deg);
+    transform: translate(-10px, -20px);
   }
   50% {
-    transform: rotate(100deg);
+    transform: translate(15px, 5px);
   }
   100% {
-    transform: rotate(-100deg);
+    transform: translate(-10px, -20px);
+  }
+}
+@keyframes float-2 {
+  0% {
+    transform: translate(5px, 20px);
+  }
+  50% {
+    transform: translate(-7px, -13px);
+  }
+  100% {
+    transform: translate(5px, 20px);
   }
 }
 

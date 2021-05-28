@@ -50,41 +50,81 @@ body {
   color: #fff;
   padding: 0 10px;
   margin: 0 100px;
-  -webkit-animation: floatingImages 5s infinite ease-in-out;
-          animation: floatingImages 5s infinite ease-in-out;
 }
 
 .clouds .info a:hover {
   color: #fff9;
 }
 
-@-webkit-keyframes floatingImages {
+.clouds .info .gmail {
+  -webkit-animation: float-2 5s infinite ease-in-out;
+          animation: float-2 5s infinite ease-in-out;
+}
+
+.clouds .info .github {
+  -webkit-animation: float-2 5s infinite ease-in-out;
+          animation: float-2 5s infinite ease-in-out;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes float-1 {
   0% {
-    -webkit-transform: rotate(-100deg);
-            transform: rotate(-100deg);
+    -webkit-transform: translate(-10px, -20px);
+            transform: translate(-10px, -20px);
   }
   50% {
-    -webkit-transform: rotate(100deg);
-            transform: rotate(100deg);
+    -webkit-transform: translate(15px, 5px);
+            transform: translate(15px, 5px);
   }
   100% {
-    -webkit-transform: rotate(-100deg);
-            transform: rotate(-100deg);
+    -webkit-transform: translate(-10px, -20px);
+            transform: translate(-10px, -20px);
   }
 }
 
-@keyframes floatingImages {
+@keyframes float-1 {
   0% {
-    -webkit-transform: rotate(-100deg);
-            transform: rotate(-100deg);
+    -webkit-transform: translate(-10px, -20px);
+            transform: translate(-10px, -20px);
   }
   50% {
-    -webkit-transform: rotate(100deg);
-            transform: rotate(100deg);
+    -webkit-transform: translate(15px, 5px);
+            transform: translate(15px, 5px);
   }
   100% {
-    -webkit-transform: rotate(-100deg);
-            transform: rotate(-100deg);
+    -webkit-transform: translate(-10px, -20px);
+            transform: translate(-10px, -20px);
+  }
+}
+
+@-webkit-keyframes float-2 {
+  0% {
+    -webkit-transform: translate(5px, 20px);
+            transform: translate(5px, 20px);
+  }
+  50% {
+    -webkit-transform: translate(-7px, -13px);
+            transform: translate(-7px, -13px);
+  }
+  100% {
+    -webkit-transform: translate(5px, 20px);
+            transform: translate(5px, 20px);
+  }
+}
+
+@keyframes float-2 {
+  0% {
+    -webkit-transform: translate(5px, 20px);
+            transform: translate(5px, 20px);
+  }
+  50% {
+    -webkit-transform: translate(-7px, -13px);
+            transform: translate(-7px, -13px);
+  }
+  100% {
+    -webkit-transform: translate(5px, 20px);
+            transform: translate(5px, 20px);
   }
 }
 
