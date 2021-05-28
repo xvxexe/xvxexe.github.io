@@ -601,23 +601,45 @@ footer {
       .input-container {
         display: block;
         input {
-          width: 185px;
+          width: 275px;
         }
       }
       .text-container {
         display: block;
         textarea {
-          max-width: 175px;
-          min-width: 175px;
+          max-width: 275px;
+          min-width: 275px;
         }
         button {
-          margin-left: 0px;
+          margin-top: 50px;
+          margin-left: 180px;
         }
       }
     }
   }
 }
+@media (max-width: 300px) {
+  .contact {
+    width: 100%;
 
+    form {
+      .input-container {
+        input {
+          width: 200px;
+        }
+      }
+      .text-container {
+        textarea {
+          max-width: 200px;
+          min-width: 200px;
+        }
+        button {
+          margin-left: 100px;
+        }
+      }
+    }
+  }
+}
 //Mobile Styling
 
 @media (max-width: 420px) {

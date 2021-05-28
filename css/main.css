@@ -714,17 +714,34 @@ footer .info a:hover {
     display: block;
   }
   .contact form .input-container input {
-    width: 185px;
+    width: 275px;
   }
   .contact form .text-container {
     display: block;
   }
   .contact form .text-container textarea {
-    max-width: 175px;
-    min-width: 175px;
+    max-width: 275px;
+    min-width: 275px;
   }
   .contact form .text-container button {
-    margin-left: 0px;
+    margin-top: 50px;
+    margin-left: 180px;
+  }
+}
+
+@media (max-width: 300px) {
+  .contact {
+    width: 100%;
+  }
+  .contact form .input-container input {
+    width: 200px;
+  }
+  .contact form .text-container textarea {
+    max-width: 200px;
+    min-width: 200px;
+  }
+  .contact form .text-container button {
+    margin-left: 100px;
   }
 }
 
