@@ -693,8 +693,8 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: (250px)[4];
-        grid-template-rows: repeat(4, 250px);
+    -ms-grid-rows: 250px 250px 250px 250px;
+        grid-template-rows: 250px 250px 250px 250px;
   }
   .contact {
     width: 50%;
