@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(51, 51, 77);
+  color: #fff;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1000px;
+  height: auto;
+  margin: auto;
+  margin-top: 100px;
+  background-color: rgb(28, 28, 46);
+  padding: 50px;
+  border-radius: 20px;
+  form {
+    position: relative;
+    text-align: center;
+    h3 {
+      padding-bottom: 50px;
+      text-transform: capitalize;
+      font-weight: 100;
+      font-size: 50px;
+    }
+    .alert-danger {
+      position: absolute;
+      color: red;
+      top: -30px;
+      left: 100px;
+    }
+    .alert-success {
+      position: absolute;
+      color: green;
+      top: -30px;
+      left: 100px;
+    }
+  }
+  .list-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    .toDo-item {
+      background-color: #ffffff1e;
+      margin-bottom: 20px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      p {
+        width: 250px;
+        padding-left: 20px;
+      }
+      .btn-container {
+        display: flex;
+        justify-content: flex-end;
+        width: 250px;
+        button {
+          margin: 10px;
+        }
+        .delete-btn:hover {
+          color: #fff;
+          background-color: red;
+        }
+        .edit-btn:hover {
+          color: #fff;
+          background-color: green;
+        }
+      }
+    }
+  }
+  .show-container {
+    visibility: visible;
+  }
+}
+input {
+  font-size: 20px;
+  padding: 5px 0;
+}
+button {
+  padding: 5px 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+}
+.clear-btn {
+  margin-top: 100px;
+  background-color: red;
+  color: #fff;
+}
+
+article .btn-container {
+  justify-self: flex-end;
+}
+p {
+  font-size: 30px;
+}
+.toDo-container {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 1030px) {
+  main {
+    width: 800px;
+  }
+}
+@media (max-width: 900px) {
+  main {
+    width: 600px;
+  }
+}
+@media (max-width: 700px) {
+  main {
+    width: 500px;
+    .list-container {
+      .toDo-item {
+        p {
+          width: 200px;
+          margin: 2px;
+        }
+        .btn-container {
+          width: 150px;
+          button {
+            margin: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  main {
+    width: 400px;
+    .list-container {
+      .toDo-item {
+        p {
+          width: 150px;
+          margin: 2px;
+        }
+        .btn-container {
+          width: 100px;
+          button {
+            margin: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+// @media (max-width: 350px) {
+//   main {
+//     width: 100%;
+//     form {
+//       h3 {
+//         font-size: 40px;
+//       }
+//     }
+//     .list-container {
+//       .toDo-item {
+//         p {
+//           width: 150px;
+//           margin: 2px;
+//         }
+//         .btn-container {
+//           width: 100px;
+//           button {
+//             margin: 2px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

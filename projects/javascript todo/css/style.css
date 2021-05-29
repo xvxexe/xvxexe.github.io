@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #33334d;
+  color: #fff;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1000px;
+  height: auto;
+  margin: auto;
+  margin-top: 100px;
+  background-color: #1c1c2e;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+main form {
+  position: relative;
+  text-align: center;
+}
+
+main form h3 {
+  padding-bottom: 50px;
+  text-transform: capitalize;
+  font-weight: 100;
+  font-size: 50px;
+}
+
+main form .alert-danger {
+  position: absolute;
+  color: red;
+  top: -30px;
+  left: 100px;
+}
+
+main form .alert-success {
+  position: absolute;
+  color: green;
+  top: -30px;
+  left: 100px;
+}
+
+main .list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+
+main .list-container .toDo-item {
+  background-color: #ffffff1e;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .list-container .toDo-item p {
+  width: 250px;
+  padding-left: 20px;
+}
+
+main .list-container .toDo-item .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 250px;
+}
+
+main .list-container .toDo-item .btn-container button {
+  margin: 10px;
+}
+
+main .list-container .toDo-item .btn-container .delete-btn:hover {
+  color: #fff;
+  background-color: red;
+}
+
+main .list-container .toDo-item .btn-container .edit-btn:hover {
+  color: #fff;
+  background-color: green;
+}
+
+main .show-container {
+  visibility: visible;
+}
+
+input {
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.clear-btn {
+  margin-top: 100px;
+  background-color: red;
+  color: #fff;
+}
+
+article .btn-container {
+  justify-self: flex-end;
+}
+
+p {
+  font-size: 30px;
+}
+
+.toDo-container {
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 1030px) {
+  main {
+    width: 800px;
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    width: 600px;
+  }
+}
+
+@media (max-width: 700px) {
+  main {
+    width: 500px;
+  }
+  main .list-container .toDo-item p {
+    width: 200px;
+    margin: 2px;
+  }
+  main .list-container .toDo-item .btn-container {
+    width: 150px;
+  }
+  main .list-container .toDo-item .btn-container button {
+    margin: 2px;
+  }
+}
+
+@media (max-width: 550px) {
+  main {
+    width: 400px;
+  }
+  main .list-container .toDo-item p {
+    width: 150px;
+    margin: 2px;
+  }
+  main .list-container .toDo-item .btn-container {
+    width: 100px;
+  }
+  main .list-container .toDo-item .btn-container button {
+    margin: 2px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
