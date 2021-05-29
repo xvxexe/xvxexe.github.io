@@ -502,35 +502,18 @@ body {
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     grid-gap: 10px;
-    overflow: hidden;
 
     img {
       width: 100%;
       height: auto;
     }
-    .first-project-container {
-      transition: 1s;
-    }
-    .second-project-container {
-      transition: 1s;
-    }
-    .third-project-container {
+    .project-container {
       transition: 1s;
     }
   }
   /*Projects Containers Hover Styling*/
 
-  .first-project-container:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: 1s;
-  }
-  .second-project-container:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: 1s;
-  }
-  .third-project-container:hover {
+  .project-container:hover {
     cursor: pointer;
     transform: scale(1.05);
     transition: 1s;
@@ -580,10 +563,11 @@ body {
     }
   }
   .projects-container {
+    height: auto;
     .second {
       display: grid;
       grid-template-columns: 100%;
-      grid-template-rows: 30% 30% 30% 30%;
+      grid-template-rows: repeat(4, 250px);
     }
   }
   .contact {
