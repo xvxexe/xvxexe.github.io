@@ -68,36 +68,6 @@ body {
           animation-delay: 2s;
 }
 
-@-webkit-keyframes float-1 {
-  0% {
-    -webkit-transform: translate(-10px, -20px);
-            transform: translate(-10px, -20px);
-  }
-  50% {
-    -webkit-transform: translate(15px, 5px);
-            transform: translate(15px, 5px);
-  }
-  100% {
-    -webkit-transform: translate(-10px, -20px);
-            transform: translate(-10px, -20px);
-  }
-}
-
-@keyframes float-1 {
-  0% {
-    -webkit-transform: translate(-10px, -20px);
-            transform: translate(-10px, -20px);
-  }
-  50% {
-    -webkit-transform: translate(15px, 5px);
-            transform: translate(15px, 5px);
-  }
-  100% {
-    -webkit-transform: translate(-10px, -20px);
-            transform: translate(-10px, -20px);
-  }
-}
-
 @-webkit-keyframes float-2 {
   0% {
     -webkit-transform: translate(5px, 20px);
@@ -521,26 +491,32 @@ body {
 }
 
 .second-container .about .skills .skills-container .skills-text img {
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   opacity: 0;
   position: absolute;
   width: 30px;
   height: auto;
   left: 55px;
   top: 15px;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
 }
 
 .second-container .about .skills .skills-container .skills-text:hover h4 {
   opacity: 0;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
 }
 
 .second-container .about .skills .skills-container .skills-text:hover img {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   opacity: 1;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
 }
 
 .second-container .about .skills .skills-container h4 {
@@ -743,6 +719,9 @@ body {
     max-width: 375px;
     min-width: 375px;
   }
+  .clouds .info {
+    bottom: 100px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -769,6 +748,15 @@ body {
     margin-top: 50px;
     margin-left: 180px;
   }
+  .clouds .info {
+    bottom: 70px;
+  }
+  .clouds .info img {
+    width: 50px;
+  }
+  .clouds .info a {
+    margin: 0 50px;
+  }
 }
 
 @media (max-width: 300px) {
@@ -784,6 +772,15 @@ body {
   }
   .contact form .text-container button {
     margin-left: 100px;
+  }
+  .clouds .info {
+    bottom: 3 0px;
+  }
+  .clouds .info img {
+    width: 50px;
+  }
+  .clouds .info a {
+    margin: 0 20px;
   }
 }
 
