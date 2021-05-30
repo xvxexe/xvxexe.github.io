@@ -29,7 +29,7 @@ function addItem(e) {
     setBackToDefault();
   } else if (value !== "" && editFlag === true) {
     editElement.innerHTML = value;
-    displyAlert("value changed", "success");
+    displyAlert("item changed", "success");
     editLocalStorage(editId, value);
     setBackToDefault();
   } else {
