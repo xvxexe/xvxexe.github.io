@@ -21,67 +21,6 @@ body {
   content: "lightmode";
 }
 
-.clouds {
-  position: relative;
-  img {
-    width: 100%;
-  }
-  .info {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    bottom: 200px;
-    justify-content: center;
-    img {
-      width: 80px;
-    }
-
-    a {
-      text-decoration: none;
-      color: #fff;
-      padding: 0 10px;
-      margin: 0 100px;
-    }
-    a:hover {
-      color: #fff9;
-    }
-    .gmail {
-      animation: float-2 5s infinite ease-in-out;
-      padding: 0 10px;
-      margin: 0 100px;
-    }
-    .showGmail {
-      position: absolute;
-      left: -220px;
-      bottom: -120px;
-      opacity: 0;
-      font-size: 30px;
-      padding: 100px;
-    }
-    .gmail:hover {
-      .showGmail {
-        opacity: 1;
-      }
-    }
-    .github {
-      animation: float-2 5s infinite ease-in-out;
-      animation-delay: 2s;
-    }
-  }
-}
-
-@keyframes float-2 {
-  0% {
-    transform: translate(5px, 20px);
-  }
-  50% {
-    transform: translate(-7px, -13px);
-  }
-  100% {
-    transform: translate(5px, 20px);
-  }
-}
-
 /*Darkmode*/
 
 .dark-mode {
@@ -125,11 +64,6 @@ body {
         }
       }
     }
-  }
-  footer {
-    width: 100%;
-    height: 100px;
-    color: #fff;
   }
 }
 
@@ -534,6 +468,26 @@ body {
   }
 }
 
+footer {
+  display: flex;
+  background-color: #1c1e25;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+
+  .info {
+    display: flex;
+    align-items: center;
+    p {
+      font-size: 20px;
+    }
+    img {
+      width: 50px;
+      margin: 0 120px;
+    }
+  }
+}
+
 /*Media Queries Styling*/
 
 //tablet styling
@@ -634,11 +588,6 @@ body {
       }
     }
   }
-  .clouds {
-    .info {
-      bottom: 100px;
-    }
-  }
 }
 @media (max-width: 600px) {
   .contact {
@@ -665,18 +614,6 @@ body {
       }
     }
   }
-  .clouds {
-    .info {
-      bottom: 70px;
-      img {
-        width: 50px;
-      }
-
-      a {
-        margin: 0 50px;
-      }
-    }
-  }
 }
 @media (max-width: 300px) {
   .contact {
@@ -696,18 +633,6 @@ body {
         button {
           margin-left: 100px;
         }
-      }
-    }
-  }
-  .clouds {
-    .info {
-      bottom: 3 0px;
-      img {
-        width: 50px;
-      }
-
-      a {
-        margin: 0 20px;
       }
     }
   }
@@ -768,10 +693,5 @@ body {
   }
   .second-container {
     margin-top: 300px;
-  }
-}
-.clouds {
-  img {
-    width: 100%;
   }
 }
