@@ -59,6 +59,21 @@ body {
 .clouds .info .gmail {
   -webkit-animation: float-2 5s infinite ease-in-out;
           animation: float-2 5s infinite ease-in-out;
+  padding: 0 10px;
+  margin: 0 100px;
+}
+
+.clouds .info .showGmail {
+  position: absolute;
+  left: -220px;
+  bottom: -120px;
+  opacity: 0;
+  font-size: 30px;
+  padding: 100px;
+}
+
+.clouds .info .gmail:hover .showGmail {
+  opacity: 1;
 }
 
 .clouds .info .github {
@@ -499,24 +514,24 @@ body {
   height: auto;
   left: 55px;
   top: 15px;
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .second-container .about .skills .skills-container .skills-text:hover h4 {
   opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
 }
 
 .second-container .about .skills .skills-container .skills-text:hover img {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   opacity: 1;
-  -webkit-transform: rotateX(0deg);
-          transform: rotateX(0deg);
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
 }
 
 .second-container .about .skills .skills-container h4 {
@@ -541,6 +556,7 @@ body {
 
 .second-container .about #more-btn:hover {
   background-color: orange;
+  color: #fff;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -575,10 +591,6 @@ body {
 }
 
 /*Projects Styling*/
-.description-container {
-  display: none;
-}
-
 .projects-container {
   margin-top: 100px;
   /*Projects Containers Hover Styling*/
@@ -616,6 +628,28 @@ body {
 .projects-container .second .project-container {
   -webkit-transition: 1s;
   transition: 1s;
+  position: relative;
+}
+
+.projects-container .description-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000c7;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .projects-container .project-container:hover {
@@ -624,6 +658,10 @@ body {
           transform: scale(1.05);
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.projects-container .project-container:hover .description-container {
+  opacity: 1;
 }
 
 /*Media Queries Styling*/

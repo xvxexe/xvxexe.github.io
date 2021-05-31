@@ -20,17 +20,6 @@ body {
 .p-text {
   content: "lightmode";
 }
-// footer {
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-//   width: 100%;
-//   height: 100px;
-//   background-color: #1c1e25;
-//   border-radius: 6px 6px 0px 0px;
-//   color: #fff;
-//   position: relative;
-// }
 
 .clouds {
   position: relative;
@@ -58,6 +47,21 @@ body {
     }
     .gmail {
       animation: float-2 5s infinite ease-in-out;
+      padding: 0 10px;
+      margin: 0 100px;
+    }
+    .showGmail {
+      position: absolute;
+      left: -220px;
+      bottom: -120px;
+      opacity: 0;
+      font-size: 30px;
+      padding: 100px;
+    }
+    .gmail:hover {
+      .showGmail {
+        opacity: 1;
+      }
     }
     .github {
       animation: float-2 5s infinite ease-in-out;
@@ -335,6 +339,8 @@ body {
   display: flex;
   height: 700px;
   margin-top: 200px;
+  // width: 80%;
+  // margin: auto;
   .about {
     width: 50%;
     text-align: center;
@@ -405,7 +411,7 @@ body {
             height: auto;
             left: 55px;
             top: 15px;
-            transform: rotateX(180deg);
+            transform: rotateY(180deg);
           }
         }
 
@@ -413,12 +419,12 @@ body {
           h4 {
             opacity: 0;
             transition: 0.3s;
-            transform: rotateX(180deg);
+            transform: rotateY(90deg);
           }
           img {
             transition: 0.5s;
             opacity: 1;
-            transform: rotateX(0deg);
+            transform: rotateY(0deg);
           }
         }
         h4 {
@@ -441,6 +447,7 @@ body {
     }
     #more-btn:hover {
       background-color: orange;
+      color: #fff;
       transition: 0.2s;
     }
   }
@@ -473,9 +480,6 @@ body {
 
 /*Projects Styling*/
 
-.description-container {
-  display: none;
-}
 .projects-container {
   margin-top: 100px;
 
@@ -503,7 +507,20 @@ body {
     }
     .project-container {
       transition: 1s;
+      position: relative;
     }
+  }
+  .description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000c7;
+    color: #fff;
+    transition: 0.4s;
   }
   /*Projects Containers Hover Styling*/
 
@@ -511,6 +528,9 @@ body {
     cursor: pointer;
     transform: scale(1.05);
     transition: 1s;
+    .description-container {
+      opacity: 1;
+    }
   }
 }
 
@@ -615,8 +635,6 @@ body {
     }
   }
   .clouds {
-    img {
-    }
     .info {
       bottom: 100px;
     }
