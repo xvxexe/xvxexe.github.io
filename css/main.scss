@@ -483,6 +483,8 @@ footer {
     }
     img {
       width: 50px;
+    }
+    a {
       margin: 0 120px;
     }
   }
@@ -614,6 +616,19 @@ footer {
       }
     }
   }
+  footer {
+    display: block;
+    .info {
+      justify-content: space-between;
+      p {
+        font-size: 15px;
+        margin: 20px;
+      }
+      a {
+        margin: 20px;
+      }
+    }
+  }
 }
 @media (max-width: 300px) {
   .contact {
@@ -632,6 +647,21 @@ footer {
         }
         button {
           margin-left: 100px;
+        }
+      }
+    }
+  }
+  footer {
+    display: block;
+    .info {
+      p {
+        font-size: 14px;
+        margin: 10px;
+      }
+      a {
+        margin: 10px;
+        img {
+          width: 40px;
         }
       }
     }
