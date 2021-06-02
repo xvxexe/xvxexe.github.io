@@ -14,11 +14,12 @@ body {
   background-color: #fff;
   color: #000;
   transition: 1s;
-  max-width: 2069px;
   margin: auto;
 }
-.p-text {
-  content: "lightmode";
+
+.wrapper {
+  max-width: 2069px;
+  margin: auto;
 }
 
 /*Darkmode*/
@@ -64,9 +65,6 @@ body {
         }
       }
     }
-  }
-  footer {
-    color: #fff;
   }
 }
 
@@ -507,6 +505,7 @@ body {
 footer {
   display: flex;
   background-color: #1c1e25;
+  color: #fff;
   justify-content: center;
   align-items: center;
   height: 100px;
@@ -516,7 +515,7 @@ footer {
     align-items: center;
     p {
       font-size: 20px;
-      color: #fff;
+      color: white;
     }
     img {
       width: 50px;
